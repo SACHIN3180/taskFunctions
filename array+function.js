@@ -104,3 +104,16 @@ console.log(countEvenNumbers([11,14,10, 12, 10,20,16]))
 // }
 // console.log(count)
 
+// 10. Create a function removeDuplicates() that takes an array and returns a new array without duplicate values.
+
+
+function removeDuplicates(){
+    
+}
+
+
+
+
+
+
+
