@@ -31,15 +31,23 @@ console.log(findMaximum(12, 65, 70))
 
 function checkEvenOdd(num) {
 
-        if(num % 2 == 0){
-               return "Even"
-        } 
-
-        if(num % 2 !=0){
-               return "Odd"
+        if (num % 2 == 0) {
+                return "Even"
         }
 
-
+        if (num % 2 != 0) {
+                return "Odd"
+        }
 }
 
 console.log(checkEvenOdd(3))
+
+//5. Create a function calculateSimpleInterest() that takes principal, rate, and time and returns the simple interest. P=1950 R=6.5% T=9months SI=?
+
+function calculateSimpleInterest(p,t,r) {
+
+        let si = p*t*r/100
+        return si
+}
+
+console.log(calculateSimpleInterest(1950,6.5,9))
