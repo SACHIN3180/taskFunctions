@@ -82,24 +82,24 @@ console.log(calculateAverage([25, 35, 94, 71, 30, 10]))
 
 function countEvenNumbers(even) {
 
- let   count = 0
+    let count = 0
     for (i = 0; i < even.length; i++) {
         if (even[i] % 2 == 0) {
-            count =count+1
+            count = count + 1
         }
     }
     return count
 }
 
-console.log(countEvenNumbers([11,14,10, 12, 10,20,16]))
+console.log(countEvenNumbers([11, 14, 10, 12, 10, 20, 16]))
 
 // let even = [11, 12, 10, 80, 89, 55, 60, 99, 65, 24, 52, 92, 76]
 //  let count = 0
 // for (let i = 0; i < even.length; i++) {
-   
+
 //     if (even[i] % 2 == 0) {
 //         count += even[i]
-        
+
 //     }
 // }
 // console.log(count)
@@ -107,10 +107,15 @@ console.log(countEvenNumbers([11,14,10, 12, 10,20,16]))
 // 10. Create a function removeDuplicates() that takes an array and returns a new array without duplicate values.
 
 
-function removeDuplicates(){
-    
+function removeDuplicates(duplicate) {
+
+    for (i = 0; i < duplicate.length; i++) {
+        split(duplicate[i])
+    }
+    return duplicate
 }
 
+console.log(removeDuplicates([1, 50, 2, 8, 3, 5, 4, 5, 8, 10, 10, 2, 50]))
 
 
 
