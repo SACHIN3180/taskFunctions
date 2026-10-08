@@ -107,15 +107,68 @@ console.log(countEvenNumbers([11, 14, 10, 12, 10, 20, 16]))
 // 10. Create a function removeDuplicates() that takes an array and returns a new array without duplicate values.
 
 
+
 function removeDuplicates(duplicate) {
 
+    let newArr = []
+
     for (i = 0; i < duplicate.length; i++) {
-        split(duplicate[i])
+        if (!newArr.includes(duplicate[i])) {
+            newArr.push(duplicate[i])
+        }
     }
-    return duplicate
+    return newArr
 }
 
 console.log(removeDuplicates([1, 50, 2, 8, 3, 5, 4, 5, 8, 10, 10, 2, 50]))
+
+//11. Create a function reverseArray() that takes an array and returns the reversed array.
+
+function reverseArray(rev, rev1) {
+
+    let newArrrev = []
+
+    for (i = rev.length - 1; i >= 0; i--) {
+        newArrrev.push(rev[i])
+    }
+
+    let newArrrev1 = []
+    for (i = rev1.length - 1; i >= 0; i--) {
+        newArrrev1.push(rev1[i])
+    }
+
+    return [newArrrev, newArrrev1]
+}
+
+console.log(reverseArray([50, 2, 8, 3, 11, 8, 14, 10, 12, 10, 20,], [14, 10, 12, 10, 20]))
+
+// let rev = [11, 14, 10, 12, 10, 20,]
+// let newArrrev = []
+
+// for (i = rev.length - 1; i >= 0; i--) {
+
+
+//     newArrrev.push(rev[i])
+
+// }
+// console.log(newArrrev)
+
+
+// 12. Create a function findElement() that takes an array and a value and returns true if the value exists, otherwise false.
+
+function findElement(ret) {
+
+    for (i = 0; i < ret.length; i++) {
+            
+    }
+
+
+
+}
+
+console.log(findElement([50, 90, 70, 33, 14]))
+
+
 
 
 
