@@ -106,8 +106,6 @@ console.log(countEvenNumbers([11, 14, 10, 12, 10, 20, 16]))
 
 // 10. Create a function removeDuplicates() that takes an array and returns a new array without duplicate values.
 
-
-
 function removeDuplicates(duplicate) {
 
     let newArr = []
@@ -163,7 +161,7 @@ function findElement(ret, findEl) {
         // if (ret.includes(findEl)) {
         //     return true
         // }
-        if(ret[i]==findEl)
+        if (ret[i] == findEl)
             return true
     }
     return false
@@ -178,9 +176,53 @@ console.log(findElement([50, 90, 70, 33, 14], 34))
 // let ca = 14
 
 
+// 13. Create a function sumArray() that takes an array of numbers and returns the total sum.
+
+function sumArray(sumArr) {
+
+    let sum = 0
+    for (i = 0; i < sumArr.length; i++) {
+        sum = sum + sumArr[i]
+    }
+    return sum
+}
+
+console.log(sumArray([21, 34, 65, 32, 71]))
 
 
+// 14. Create a function countOccurrences() that takes an array and a value and returns how many times the value occurs.
 
+function countOccurrences(countOcc, val) {
+
+    let count = 0
+    for (i = 0; i < countOcc.length; i++) {
+        if (countOcc[i] == val) {
+            count = count + 1
+        }
+    }
+    return count
+}
+
+console.log(countOccurrences([21, 36, 65, 86, 36, 36, 96, 75, 36], 75))
+
+// 15. Create a function separateNumbers() that takes an array and returns separate arrays for even and odd numbers.
+
+function separateNumbers(separateNum) {
+    let newEven = []
+    let newOdd = []
+    for (i = 0; i < separateNum.length; i++) {
+
+        if(separateNum[i] % 2 == 0){
+          newEven.push(separateNum[i])
+          
+        } else{
+            newOdd.push(separateNum[i])
+        }
+    }
+    return [newEven,newOdd]
+}
+
+console.log(separateNumbers([3,1,2,42, 3, 4, 5, 6, 7, 8, 9, 1, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20]));
 
 
 
